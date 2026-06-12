@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Livro</title>
+</head>
+<body>
+
+    <h2>Cadastro de Livro</h2>
+
+    Código: <input type="text" id="codigo"><br><br>
+    Título: <input type="text" id="titulo"><br><br>
+    Autor: <input type="text" id="autor"><br><br>
+    Ano: <input type="number" id="ano"><br><br>
+    Editora: <input type="text" id="editora"><br><br>
+    Localização: <input type="text" id="localizacao"><br><br>
+
+    <button onclick="cadastrarLivro()">Cadastrar</button>
+
+    <h3>Dados do Livro:</h3>
+    <p id="resultado"></p>
+
+    <script>
+        function cadastrarLivro() {
+            let codigo = document.getElementById("codigo").value;
+            let titulo = document.getElementById("titulo").value;
+            let autor = document.getElementById("autor").value;
+            let ano = document.getElementById("ano").value;
+            let editora = document.getElementById("editora").value;
+            let localizacao = document.getElementById("localizacao").value;
+
+            document.getElementById("resultado").innerHTML =
+                "Código: " + codigo + "<br>" +
+                "Título: " + titulo + "<br>" +
+                "Autor: " + autor + "<br>" +
+                "Ano: " + ano + "<br>" +
+                "Editora: " + editora + "<br>" +
+                "Localização: " + localizacao;
+        }
+    </script>
+
+</body>
+</html>
